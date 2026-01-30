@@ -1,0 +1,427 @@
+[
+  {
+    "id": "2070150",
+    "title": "Senior DevOps Engineer",
+    "company": "Marketerx",
+    "location": "USA",
+    "url": "https://remotive.com/remote-jobs/devops/senior-devops-engineer-2070150",
+    "tags": [
+      "AWS",
+      "cloud",
+      "docker",
+      "kubernetes",
+      "security",
+      "SRE",
+      "AI/ML",
+      "CI/CD",
+      "terraform",
+      "startup",
+      "ansible",
+      "infrastructure"
+    ],
+    "clean_text": "Title: Senior DevOps Engineer\nCompany: Marketerx\nLocation: USA\nTags: AWS, cloud, docker, kubernetes, security, SRE, AI/ML, CI/CD, terraform, startup, ansible, infrastructure\nDescription:\nThe Role: Architect of a Resilient Future We are seeking a highly experienced and motivated Senior DevOps/Security Engineer to join our founding engineering team. This isn't just another DevOps role. You will be the architect of the resilient, scalable, and secure foundation upon which our entire autonomous marketing platform is built. As the first dedicated DevOps/Security hire, you will have a unique opportunity to shape our infrastructure from the ground up, ensuring our platform can deliver on its promise of making brilliant marketing effortless. We're looking for a visionary builder who is passionate about creating robust systems that can handle enterprise-level scale while empowering our customers to compete and win. Your Impact: Build the Bedrock: Design and implement a world-class, scalable cloud infrastructure on AWS using Infrastructure as Code (IaC) principles (Terraform, CloudFormation). This is the foundation for amplifying the brilliance of thousands of businesses. Automate Everything: Develop and manage sophisticated CI/CD pipelines to ensure our AI models and applications are deployed rapidly, reliably, and securely. Fortify the Platform: Implement a comprehensive, proactive security program from the ground up. You will be the guardian of our customers' data and our platform's integrity, ensuring compliance with standards like SOC2 and GDPR. Enable Hyper-Growth: Engineer our systems for massive scalability and performance, ensuring we can seamlessly onboard thousands of new customers while maintaining a flawless user experience. Drive Intelligence-Led Operations: Establish robust monitoring, logging, and alerting systems that provide deep insights into system health and performance, allowing for proactive optimization and issue resolution. Who You Are: A seasoned DevOps or SRE professional with 5+ years of experience, bringing a security-first mindset to everything you do. An expert in cloud platforms (preferably AWS), containerization (Docker, Kubernetes), and Infrastructure as Code (Terraform, Ansible). A proactive builder who thrives in a fast-paced, high-growth startup environment. You're not just looking for a job; you're looking to join a mission-driven team with a proven leader and build something that will redefine an industry. You are inspired by the challenge of building a platform that levels the playing field for visionary entrepreneurs. What We Offer: Competitive Salary: $130,000 - $150,000 annually. Founding Team Equity: A gen"
+  },
+  {
+    "id": "2086826",
+    "title": "Client Support Specialist",
+    "company": "Clipboard Health",
+    "location": "Europe, Canada, South Africa, Philippines, Jamaica",
+    "url": "https://remotive.com/remote-jobs/customer-service/client-support-specialist-2086826",
+    "tags": [
+      "documentation",
+      "zendesk",
+      "account management",
+      "startup",
+      "Linux/Unix"
+    ],
+    "clean_text": "Title: Client Support Specialist\nCompany: Clipboard Health\nLocation: Europe, Canada, South Africa, Philippines, Jamaica\nTags: documentation, zendesk, account management, startup, Linux/Unix\nDescription:\nAbout the Role Clipboard Health is looking for highly motivated, customer-focused individuals to join our team as B2B Support Specialists (Workplace Support Agents). This is not a traditional call center role—you will be the frontline specialist for our most valuable business clients, our workplace customers. Your job is to proactively solve client issues, prevent churn, and ensure a seamless experience for our customers. This is primarily a voice-based role, with additional responsibilities that include handling emails as needed Responsibilities Deliver fast, accurate, and empathetic support to our workplace customers across voice and email, resolving shift, payment, and platform-related issues in real time Navigate tools like Zendesk and the Clipboard Health portal to investigate cases, update form fields, log clear internal notes, and maintain accurate documentation Apply sound judgment and critical thinking to troubleshoot issues, follow or adapt workflows, and escalate only when necessary Develop deep expertise in our products and processes to identify recurring issues or process gaps, helping improve both customer experiences and internal operations. Work cross-functionally with teams such as Billing, Account Management, and Worker Operations to gather the necessary information and ensure customer issues are resolved effectively Uphold our values such as unreasonably fast, ownership, and uncomfortably high standards in every interaction Success Factors Customer-Centric Mindset – You genuinely care about helping customers and take ownership of their problems. Strong Communication Skills – Clear, professional English (both spoken and written) is critical for success in this role. Proactive Problem-Solving – You don’t just follow scripts—you think critically and find long-term solutions for customers. High Accountability – We value people who hold themselves to high standards and consistently deliver results. Qualifications Open to candidates of all experience levels—what matters most is your ability to handle business customers professionally and solve problems effectively. No specific degree required—we care about what you can do, not just what’s on your résumé. Why Join Clipboard Health? 100% Remote – Always. Work from anywhere in the world. Fast-Paced Startup Environment. Join a company that values curiosity, independence, and growth. A Hiring Process That Rewards Skills, Not Just Experience. Every applicant gets a fair shot—our selection is based o"
+  },
+  {
+    "id": "1919265",
+    "title": "Senior Independent Software Developer",
+    "company": "A.Team",
+    "location": "Americas, Europe, Israel",
+    "url": "https://remotive.com/remote-jobs/software-development/senior-independent-software-developer-1919265",
+    "tags": [
+      "go",
+      "wordpress",
+      "chat",
+      "apple",
+      "testing",
+      "catalyst"
+    ],
+    "clean_text": "Title: Senior Independent Software Developer\nCompany: A.Team\nLocation: Americas, Europe, Israel\nTags: go, wordpress, chat, apple, testing, catalyst\nDescription:\nYou must be located in the Americas, Europe, or Israel to apply. A·Team is a VC-backed, stealth, application-only home on the internet for senior independent software builders to team up with hand-picked, high-growth companies on their next big thing. After talking with hundreds of independent engineers, designers, and product folks, we heard over and over that finding vetted, high-quality, consistent clients is hard, and projects are often too small to be rewarding. A·Team matches small teams of the most talented builders in the world with companies backed by a16z, YC, Softbank, General Catalyst, etc. on a contract basis for many of their most important initiatives. We quietly launched in May 2020, and have helped A·Teamers earn $85+ million since. As part of A·Team, you can expect: High-paying, meaningful missions with the most audacious companies sent your way; generally $90-$150+/hr, with vetted, fascinating clients doing work that matters. We're picky about who we partner with; new clients only come in via trusted referral. We've worked with Lyft, McGraw Hill, ClearCo, Pepsi, Walmart, the former CEO of Waze, the leading vaccine production software, several new unicorns we can't say here, and dozens of startups backed by a16z/YC/Softbank/Insight/Tiger/etc. Work alongside friends old & new: our niche is small/diverse product teams, since clients with larger budgets and higher-impact work tell us they want teams, not individuals. Of course, we keep friends together whenever we can. Full autonomy: say \"no\" to things that don't excite you. The most talented builders often juggle a few things at once, so there's never pressure to join an A·Team mission if you don't have the bandwidth. If we're no longer a fit, it's easy to leave or pause too. Small, curated, off-the-record gatherings: for conversations hard to have elsewhere. Long-term, we're creating micro-communities for the world's top builders to become friends around the things they care about. Keep 100% of what you earn: if you charge $120/hr, you get $120/hr. A·Team makes money by charging a small, flat, transparent platform fee on top of your rate. How to apply: Go here: https://build.a.team/remotivereferral + mention Remotive. We respect your time so the application is short. We're also much more interested in seeing what you've made, and excited to chat more if there’s a fit. What you’ll do: Once part of A.Team, you’ll regularly be invited to impactful missions that match your interests. Find the "
+  },
+  {
+    "id": "1919266",
+    "title": "Senior Independent AI Engineer / Architect",
+    "company": "A.Team",
+    "location": "Americas, Europe, Israel",
+    "url": "https://remotive.com/remote-jobs/software-development/senior-independent-ai-engineer-architect-1919266",
+    "tags": [
+      "go",
+      "UI/UX",
+      "wordpress",
+      "chat",
+      "apple",
+      "testing",
+      "catalyst"
+    ],
+    "clean_text": "Title: Senior Independent AI Engineer / Architect\nCompany: A.Team\nLocation: Americas, Europe, Israel\nTags: go, UI/UX, wordpress, chat, apple, testing, catalyst\nDescription:\nLocation: Americas, Europe, or Israel The Opportunity Join A.Team’s invite-only network of senior builders and access exclusive missions with Fortune 500s and top startups. This isn’t client work or employment—it’s a vetted collective where you’re matched to impactful projects. At A.Team, you won’t just implement someone else’s plan. You’ll be the technical decision-maker, owning everything from model design to enterprise integration. Why A.Team Elite peers : ex-OpenAI, Google, Meta, Amazon. Precision matching : Missions in LLMs, CV, NLP, ML infra, fine-tuning. Compensation : $120–$170/hr, biweekly payouts, you keep 100%. Autonomy : Choose only missions that excite you—no small gigs, no chasing. What You’ll Do Lead the design, deployment, and scaling of production AI systems. Build ambitious software 0→1 in small, senior teams (3–5 people). Scope, propose, and execute solutions with real ownership. Partner with founders, CTOs, and product leaders to deliver outcomes that matter. Who Thrives Here Senior AI/ML Engineers with production systems live. AI Architects who’ve built enterprise AI stacks. Tech Leaders balancing architecture with business outcomes. Specialists in LLMs, CV, NLP, or infra with proven depth. Not a fit : under 4 years’ experience, simple website builders, or small gig seekers. Proof in the Network Your peers have scaled apps to millions, built enterprise AI platforms, shipped AI at unicorns, and deployed infra handling billions/day. How to Apply Apply once at build.a.team/apply-ai . Short, rigorous process—we care more about what you’ve built than lengthy forms."
+  },
+  {
+    "id": "2069746",
+    "title": "Tech Lead Full-Stack Rails Engineer",
+    "company": "Mitre Media",
+    "location": "USA, Canada, USA timezones",
+    "url": "https://remotive.com/remote-jobs/software-development/tech-lead-full-stack-rails-engineer-2069746",
+    "tags": [
+      "api",
+      "CSS",
+      "docker",
+      "elasticsearch",
+      "fullstack",
+      "html",
+      "javascript",
+      "kubernetes",
+      "postgresql",
+      "react",
+      "ror",
+      "ruby/rails",
+      "AI/ML",
+      "CAD",
+      "advertising",
+      "Redis",
+      "ES6",
+      "web applications",
+      "MySQL",
+      "NLP",
+      "fintech",
+      "Micro services",
+      "github",
+      "system architecture"
+    ],
+    "clean_text": "Title: Tech Lead Full-Stack Rails Engineer\nCompany: Mitre Media\nLocation: USA, Canada, USA timezones\nTags: api, CSS, docker, elasticsearch, fullstack, html, javascript, kubernetes, postgresql, react, ror, ruby/rails, AI/ML, CAD, advertising, Redis, ES6, web applications, MySQL, NLP, fintech, Micro services, github, system architecture\nDescription:\nAbout Mitre Media Mitre Media is redefining FinTech with AI-driven tools that empower millions of investors. Our portfolio, including Dividend.com and MutualFunds.com, leverages LLMs to deliver novel data insights and visually rich user experiences. For over a decade, we’ve served individual investors, financial advisors, and top asset managers like BlackRock and Vanguard through our premium data, tools, and advertising solutions. Join our lean, entrepreneurial team to shape the future of AI-powered investing from your location ±3 hours from Eastern Time. Our users are deeply engaged, spending over 5 minutes per visit with a bounce rate below 10%, researching investments across hundreds of different categories. With 40 million brokerage accounts in the U.S., we take pride in building tools that make a real impact, fostering a culture of trust, innovation, and dynamism. If you’re passionate about financial technology and AI, we’d love to connect! About the Role As a Full-Stack Rails Tech Lead, you’ll architect and implement LLM-powered web applications within our microservices-based Rails 8 platform. Reporting directly to our CTO, you’ll collaborate with a small, high-impact team to deliver user experiences across Dividend.com, MutualFunds.com and other brands within our portfolio. This role combines expert Ruby on Rails skills with AI integration expertise, requiring you to leverage LLMs in your development workflow, state management and user interactions. You’ll work in a remote-first hybrid environment, which encourages in person collaboration, using ShapeUp to manage projects that trade-off on-time delivery for de-scoped outcomes. As a technical leader, you'll have a seat at the table shaping system architecture, implementing core features all while embracing an entrepreneurial mindset and a “get things done” mentality. Responsibilities Architect and maintain Rails applications (Rails 8) Integrate LLMs into our microservices architecture for state management and real-time user experiences. Enhance front-end experiences with Hotwire, StimulusJS, or React, ensuring seamless AI-driven interactions. Optimize LLM inference for low latency and cost, using caching and asynchronous processing. Required Technical Skills Back-End Ruby (5+ years, expert-level) Ruby on Rails (Rails 6-8 preferred) PostgreSQL (or MySQL) Elasticsearch Redis Docker Front-End StimulusJS or JavaScript ES6 Tailwind CSS HTML HTTP AI Integration Experience integrating AI/ML models (e.g., LL"
+  },
+  {
+    "id": "2069747",
+    "title": "Tech Lead Databricks Data Engineer",
+    "company": "Mitre Media",
+    "location": "USA, Canada, USA timezones",
+    "url": "https://remotive.com/remote-jobs/software-development/tech-lead-databricks-data-engineer-2069747",
+    "tags": [
+      "apache",
+      "api",
+      "AWS",
+      "big data",
+      "cloud",
+      "java",
+      "python",
+      "scala",
+      "sql",
+      "AI/ML",
+      "documentation",
+      "CAD",
+      "CI/CD",
+      "analytics",
+      "advertising",
+      "spark",
+      "tableau",
+      "GCP",
+      "ETL",
+      "data engineering",
+      "SOLID",
+      "fintech",
+      "Micro services",
+      "backbone",
+      "github"
+    ],
+    "clean_text": "Title: Tech Lead Databricks Data Engineer\nCompany: Mitre Media\nLocation: USA, Canada, USA timezones\nTags: apache, api, AWS, big data, cloud, java, python, scala, sql, AI/ML, documentation, CAD, CI/CD, analytics, advertising, spark, tableau, GCP, ETL, data engineering, SOLID, fintech, Micro services, backbone, github\nDescription:\nAbout Mitre Media Mitre Media is redefining FinTech with AI-driven tools that empower millions of investors. Our portfolio, including Dividend.com and MutualFunds.com, leverages LLMs to deliver novel data insights and visually rich user experiences. For over a decade, we’ve served individual investors, financial advisors, and top asset managers like BlackRock and Vanguard through our premium data, tools, and advertising solutions. If you’re excited by the intersection of big data, AI, and investing, join our lean, entrepreneurial team from anywhere within ±3 hours of Eastern Time. About the Role As Tech Lead Data Engineer, you’ll architect and maintain the data backbone powering every feature across our product suite. Reporting to the CTO, you will design Databricks-based ETL pipelines, model complex investment data, and surface low-latency, high-quality datasets for both user-facing features and internal AI/analytics workloads. You’ll collaborate in a remote-first hybrid culture that values in-person “bursts” of collaboration, follow ShapeUp for project planning, and ship pragmatic solutions that favor de-scoping over delays. Responsibilities Design, implement, and optimize large-scale ETL workflows in Databricks (Apache Spark, Delta Lake, DBT). Develop algorithms that transform raw market data into actionable insights. Own data quality and lineage, instituting tests, monitoring, and alerting for mission-critical pipelines. Evolve our cloud data platform (AWS & GCP) for scale, performance, and cost efficiency. Mentor engineers, championing best practices in code reviews, documentation, and DevOps for data. Required Technical Skills Data Engineering Programming : Expert in Python plus working knowledge of Scala or Java. Databricks & Spark : Hands-on with cluster tuning, job orchestration, and Delta Tables. SQL & DBT : Strong analytical SQL, modular data-model design, and CI/CD for transformations. Cloud : Production experience on AWS or GCP data services (e.g., S3/GCS, EMR/Dataproc, Glue/Dataflow). ETL & Orchestration : Solid grasp of EL(T) patterns, workflow scheduling, and incremental processing. Data Modeling : Dimensional and schema-on-read designs for analytics and AI. AI & Analytics Enablement Building feature stores or inference-ready tables for ML/LLM workflows. Familiarity with vector databases or embedding pipelines Nice-to-Have Technical Skills Apache Airflow, Luigi, or Dagster for DAG orchestration. Experience with Looker, Tableau, or Stripe’s "
+  },
+  {
+    "id": "2069728",
+    "title": "Software Engineer C++ (Senior)",
+    "company": "Apexver",
+    "location": "Worldwide",
+    "url": "https://remotive.com/remote-jobs/software-development/software-engineer-c-senior-2069728",
+    "tags": [
+      "C++",
+      "python",
+      "research",
+      "mentoring",
+      "hardware",
+      "distributed systems",
+      "trading",
+      "scripting",
+      "kernel",
+      "testing",
+      "infrastructure",
+      "GPU"
+    ],
+    "clean_text": "Title: Software Engineer C++ (Senior)\nCompany: Apexver\nLocation: Worldwide\nTags: C++, python, research, mentoring, hardware, distributed systems, trading, scripting, kernel, testing, infrastructure, GPU\nDescription:\nRole Overview As a Senior Software Engineer , you will take leadership in designing, building, and scaling high-performance trading systems. You will be driving architectural decisions, mentoring others, and ensuring the reliability, latency, and correctness of our production systems. Your role will bridge between quant research, trading operations, and engineering excellence. Key Responsibilities Lead design, development, and ownership of large, complex C++ systems: engines for order execution, market data ingestion, risk, connectivity, and downstream services. Architect systems for low latency, high throughput, fault tolerance, and operational resilience. Identify performance bottlenecks across software/hardware layers; lead initiatives to reduce latency, increase capacity, and improve stability. Mentor and lead other engineers through code reviews, pairing, and driving best practices in code structure, testing, and performance. Liaise closely with quant researchers and traders: influence product and strategy design, ensuring designs satisfy functional, non-functional, and latency constraints. Drive infrastructure and tooling improvements: monitoring, observability, deployment pipelines, build systems, profiling frameworks, and latency measurement tools. Stay up to date with new technologies and architectures (e.g. kernel bypass, RDMA, NUMA, CPU/GPU/FPGAs) and evaluate them for potential adoption. Qualifications Required 5+ years (often 7+) of experience building production C++ systems, ideally in latency-sensitive or real-time environments. Deep expertise in modern C++ (C++17/20/23), templates, metaprogramming, memory management, and allocation strategies. Strong understanding of concurrency: multi-threading, lock-free programming, synchronization, hardware caches, and memory fences. Proven track record in optimizing performance (latency, throughput); experience profiling and benchmarking at a low level. Experience with network programming: TCP/UDP, protocol design, or low-level kernel/OS tuning. Familiarity with distributed systems, messaging, resilience under load, and graceful degradation. Excellent system-level thinking: balancing trade-offs (latency vs. safety vs. maintainability). Strong leadership and communication skills; ability to push standards, mentor juniors, and influence design across teams. Nice to Have Prior HFT / proprietary trading / market making experience. Deep knowledge of financial market microstructure: order books, matching eng"
+  },
+  {
+    "id": "2088537",
+    "title": "Senior Front-End Developer- Analytics & UX Focused (Remote)",
+    "company": "Actionable.co",
+    "location": "Worldwide",
+    "url": "https://remotive.com/remote-jobs/software-development/senior-front-end-developer-analytics-ux-focused-remote-2088537",
+    "tags": [
+      "excel",
+      "react",
+      "trading",
+      "financial services",
+      "infrastructure",
+      "statistics",
+      "banking"
+    ],
+    "clean_text": "Title: Senior Front-End Developer- Analytics & UX Focused (Remote)\nCompany: Actionable.co\nLocation: Worldwide\nTags: excel, react, trading, financial services, infrastructure, statistics, banking\nDescription:\nAt Actionable.co , we’re transforming how Learning & Development initiatives create lasting, measurable behavior change. Our platform empowers Consultants and Professionals in the Training, Leadership Development, Learning and Culture Change space to demonstrate measurable impact through our tech-enabled change methodology. We’re looking for a UX-obsessed front-end engineer who can turn complex analytics and participant workflows into intuitive, high-impact user experiences. This role starts with full ownership of front-end development with a potential path to product leadership for someone who wants to grow beyond pure engineering. WHAT YOU’LL DO Enhance the Analytics Experience Own the front-end development of our interactive, flexible, analytics solution delivering high-performance dashboards and data visualizations for our users and their stakeholders. Design analytics experiences that are easy to use, trustworthy, and executive-ready, translating complex data into actionable insight. Ensure consistency and reliability across reporting, permissions, and role-based views. Own the End User Experience Modernize and streamline onboarding, authentication, and core workflows. Design intuitive, accessible, and motivating user flows that encourage consistent adoption and engagement. Ensure performance, responsiveness, and accessibility across devices and operating systems. Collaborate Across the Stack Work closely with back-end engineers integrating MySQL, Python services, and Laravel/PHP APIs. Improve performance and reliability across all user-facing experiences. Help evolve our design system and front-end standards. Drive Product from Concept to Delivery Partner with Client Success and Engineering to turn ideas into clear scopes, user stories, and technical plans. Identify MVPs, make smart tradeoffs, and prioritize what delivers the most user value. Act as a bridge between design, engineering, and product—bringing clarity to ambiguity. Own features from discovery through delivery and iteration. Grow Into Product Leadership (Optional Path) Act as a feature owner and product partner. Contribute to roadmap discussions and discovery. Mentor others and influence technical and product direction. Progress toward a Product Lead / Product Manager role, if desired. WHAT WE’RE LOOKING FOR Core Front-End Experience Strong experience building complex applications with both Vue.js and React. Confident working with CSS frameworks (we use Bootstrap and Tailwind). Experienc"
+  },
+  {
+    "id": "2088536",
+    "title": "🇫🇷 Senior Site Reliability Engineer (SRE) - Cloud",
+    "company": "Scalingo",
+    "location": "France",
+    "url": "https://remotive.com/remote-jobs/devops/senior-site-reliability-engineer-sre-cloud-2088536",
+    "tags": [
+      "cloud",
+      "SRE",
+      "paas",
+      "documentation",
+      "Site Reliability",
+      "engineering management",
+      "startup",
+      "Linux/Unix",
+      "SLA",
+      "infrastructure"
+    ],
+    "clean_text": "Title: 🇫🇷 Senior Site Reliability Engineer (SRE) - Cloud\nCompany: Scalingo\nLocation: France\nTags: cloud, SRE, paas, documentation, Site Reliability, engineering management, startup, Linux/Unix, SLA, infrastructure\nDescription:\n🇫🇷 This job ad is written in French. 🇫🇷 🌍 À propos de Scalingo Scalingo est une startup technologique en forte croissance. Notre plateforme cloud européenne, robuste et souveraine , libère les équipes techniques des contraintes d’infrastructure, pour leur permettre de se concentrer sur ce qui compte vraiment : créer, innover et délivrer. Notre PaaS permet de déployer et d’héberger facilement des applications web et des bases de données, sans avoir à gérer l’administration système ou l’infrastructure sous-jacente. Nous accompagnons une grande diversité de clients — startups, scale-ups, grands groupes et institutions publiques — parmi lesquels le Ministère de l’Intérieur ou ENGIE, avec une exigence élevée en matière de fiabilité, de sécurité et de qualité de service. 🎯 Ton rôle chez Scalingo En tant que Senior Site Reliability Engineer , tu occupes une position clé à l’interface des équipes développement, infrastructure, sécurité et support . A terme, nous ennvisageons une évolution vers un rôle managérial . Ton rôle est à la fois : technique , avec un fort impact sur la fiabilité et la performance de la plateforme, structurant , en faisant évoluer les pratiques et les outils SRE et audelà., fédérateur , en accompagnant et faisant monter en compétence une équipe SRE de 2 personnes. Tu interviens aussi bien sur le fonctionnement quotidien de l’activité SRE que sur les projets stratégiques liés à la croissance de la plateforme. Référent ou référente technique, tu incarnes les bonnes pratiques SRE et contribues à diffuser une culture de la fiabilité, de l’automatisation et de l’excellence opérationnelle au sein de Scalingo. 🧩 Pourquoi ce rôle est essentiel Garantir la stabilité, la disponibilité et la résilience des systèmes en production. Anticiper les défaillances et structurer des réponses efficaces aux incidents. Industrialiser et automatiser l’exploitation de la plateforme. Maintenir un haut niveau de qualité de service vis-à-vis de nos clients et de nos engagements contractuels (SLA). Chaque amélioration que tu apportes contribue directement à la robustesse de la plateforme , à la réduction des incidents, à la maîtrise des coûts opérationnels et à l’accompagnement de la croissance de Scalingo. 🤝 Organisation & évolution Rattaché directement à un Engineering Manager , tu exerces un leadership technique et opérationnel fort , sans responsabilité hiérarchique directe dans un premier temps. À moyen terme, nous souhaitons que ce rôle évolue vers le management "
+  },
+  {
+    "id": "2088534",
+    "title": "Senior Software Engineer, Global Contractor",
+    "company": "Jump",
+    "location": "Worldwide",
+    "url": "https://remotive.com/remote-jobs/software-development/senior-software-engineer-global-contractor-2088534",
+    "tags": [
+      "cloud",
+      "postgresql",
+      "security",
+      "AI/ML",
+      "elixir",
+      "terraform",
+      "Snowflake",
+      "chat",
+      "financial services",
+      "github"
+    ],
+    "clean_text": "Title: Senior Software Engineer, Global Contractor\nCompany: Jump\nLocation: Worldwide\nTags: cloud, postgresql, security, AI/ML, elixir, terraform, Snowflake, chat, financial services, github\nDescription:\nWho are we? Hey there! We are Jumpapp.com , AI for Financial Advisors. Jump’s mission is to empower financial advisors, firms, and clients to thrive in the age of AI with smarter workflows, deeper insights, and enterprise-grade security and compliance. Jump leads its category in market share, customer satisfaction, and analyst rankings, and is rapidly growing Jump was launched in 2023 by repeat entrepreneurs and is led by a team with backgrounds from Harvard, Stanford, Google, Snowflake, Bill.com , JPMorgan, Fidelity, Bain, EY, Bain Capital Ventures, Auditboard, Nitrogen, and more. What is the job? To succeed in this role, you should have at least 6 years of professional software engineering experience . The details of your tech background don’t matter as much as your ability to approach problems with curiosity and good judgment. We want people who can adjust when priorities shift and who see every new challenge as a chance to learn. Just as importantly, we value clear and respectful communication — the kind that involves both listening to feedback and offering it thoughtfully to help the whole team grow. In our culture, setbacks aren’t about blame, they’re about collaboration, problem-solving, and moving forward together. If you don't have experience with everything in our tech stack still apply! We are willing to teach the right candidates and get them up to speed. Our tech stack is Elixir, Liveview, Postgres, Github, k8s & Terraform on Google Cloud. This role pays $30-$60/hr and is for global software engineering contractors. You can work any hours from anywhere. Our code is clean, well tested, well architected and fun to work in. You’ll love how quickly you can ship stuff! What is the hiring process? We have a 3 step hiring process and it takes about a week. First, you'll submit your application. Second, you’ll be invited to either a 48 or 72 hour challenge to build an app. Everyone who successfully completes this challenge before the deadline will be paid $3,000! Finally, if your code looks good, our final step is a short chat with our CTO. You can and should use AI to help you create this app. We are all in on the use AI and want someone who can make the most of it! Our Culture We have a rigorous hiring process yet a kind and encouraging culture. We hire for a mix of experience, aptitude & attitude. We are a family-first company, so we work smart and hard but not round the clock at the expense of family. Other info: We buy the subscriptions you need "
+  },
+  {
+    "id": "2087694",
+    "title": "AI Trainer",
+    "company": "Anuttacon",
+    "location": "Worldwide",
+    "url": "https://remotive.com/remote-jobs/ai-ml/ai-trainer-2087694",
+    "tags": [
+      "video",
+      "AI/ML",
+      "research",
+      "game design",
+      "data analysis",
+      "STEM",
+      "R",
+      "narrative design"
+    ],
+    "clean_text": "Title: AI Trainer\nCompany: Anuttacon\nLocation: Worldwide\nTags: video, AI/ML, research, game design, data analysis, STEM, R, narrative design\nDescription:\n🎮 Our Culture: Our culture thrives on creativity, communication, and collaboration. Around here, the work is the game. You’ll have fun, make real connections, and actually see the impact of what you do. 🎮 About Us: Anuttacon’s mission is to create immersive and personalized virtual worlds where players can form unique connections and deeper experiences in digital spaces. We are dedicated to leveraging different perspectives, voices, and backgrounds to promote a thoughtful and humanistic approach to technology. Through research-driven and explorative AI, we aim to create real-time interactions that seamlessly blend text, audio, visuals and beyond. 🎮 About the Role: We’re looking for individuals with diverse expertise to join our data team as AI Trainers. In this role, you will directly be involved in improving the accuracy and performance of our models. 🎮 Responsibilities: Annotate content in a variety of media to support game design, such as dialogues, quests, character interactions, and scenes Ensure accuracy and consistency in the data to optimize players’ gaming experience Support in-depth world building, comprehensive characters, mini-plots, personality profiles, and other relevant details Annotate and evaluate model responses against our evaluation rubrics in an effort to improve dialogue and overall interactions to achieve the best user experience possible Collaborate with our research and product teams to develop state-of-the-art large language models 🎮 About You: Native or fluent in English Have a passion for gaming, especially those experienced in narrative games Strong attention to detail and a commitment to producing high-quality work in a flexible, dynamic environment Ability to follow complex guidelines and apply them consistently Good communication skills; able to give and receive feedback effectively 🎮 Nice to Haves: Degree and/or experience in the following fields are a plus: Storytelling, creative writing, copywriting, or content development Media, film, video, audio, or narrative design Performing arts, voice work, or expressive presentation Marketing, communications, or audience engagement Psychology, philosophy, or other fields focused on human behavior and thought STEM di sciplines with a strong emphasis on clarity and structure Previous experience working with AI/ML concepts or working with data analysis, data manipulation, data reporting. 🎮 Compensation & other expectations: US Hourly rate: $25 (but depending on your role and qualifi"
+  },
+  {
+    "id": "2088533",
+    "title": "Quantitative Research Team Lead (Completed)",
+    "company": "Apexver",
+    "location": "Worldwide",
+    "url": "https://remotive.com/remote-jobs/software-development/quantitative-research-team-lead-completed-2088533",
+    "tags": [
+      "C++",
+      "python",
+      "AI/ML",
+      "research",
+      "trading",
+      "risk management",
+      "team lead",
+      "testing",
+      "computer science",
+      "infrastructure",
+      "statistics"
+    ],
+    "clean_text": "Title: Quantitative Research Team Lead (Completed)\nCompany: Apexver\nLocation: Worldwide\nTags: C++, python, AI/ML, research, trading, risk management, team lead, testing, computer science, infrastructure, statistics\nDescription:\nRole Overview As the Quantitative Research Team Lead, you will head a team of quants and researchers dedicated to developing trading strategies, improving alpha models, and optimizing execution. This role is both hands-on research and strategic leadership: you will drive model development, oversee research pipelines, and mentor team members while shaping Apexver’s research roadmap. You will partner with traders, engineers, and data scientists to push the boundaries of what’s possible in high-frequency and systematic trading. Key Responsibilities • Leadership & Strategy ◦ Lead, mentor, and grow a team of quantitative researchers. ◦ Define research priorities, align with trading and technology strategy, and ensure results deliver measurable alpha. ◦ Instill best practices for model development, testing, and deployment. • Research & Innovation ◦ Develop and refine alpha models, statistical arbitrage signals, and systematic trading strategies. ◦ Explore large-scale datasets to identify patterns, anomalies, and predictive signals. ◦ Partner with engineers to translate research into robust, production-ready systems. • Collaboration & Execution ◦ Work closely with traders and risk managers to integrate models into execution pipelines. ◦ Collaborate with infrastructure teams to optimize simulation environments, backtesting frameworks, and data feeds. ◦ Balance short-term opportunities with long-term research initiatives. Qualifications Required: • 7+ years of experience in quantitative research / systematic trading, with at least 2+ years in a leadership capacity. • Advanced degree (PhD strongly preferred, MSc acceptable) in Mathematics, Physics, Computer Science, Statistics, or related quantitative discipline. • Deep experience with time-series analysis, probability, statistics, and machine learning methods. • Strong programming skills in Python (for research) and familiarity with C++ (for production alignment). • Proven track record of delivering profitable trading strategies or alpha models. • Strong leadership, communication, and ability to align a multi-disciplinary team. Nice to Have: • Background in high-frequency trading (HFT) or market-making. • Expertise in market microstructure, execution algorithms, or exchange connectivity. • Experience managing petabyte-scale datasets and distributed research pipelines. • Comfort with risk management frameworks and capital allocation. Why Join Apexver? • Compensation & upside: €180k base salary + up to 100% performan"
+  },
+  {
+    "id": "1680495",
+    "title": "Office Assistant",
+    "company": "Coalition Technologies",
+    "location": "Worldwide",
+    "url": "https://remotive.com/remote-jobs/marketing/office-assistant-1680495",
+    "tags": [
+      "CSS",
+      "excel",
+      "frontend",
+      "git",
+      "html",
+      "illustrator",
+      "magento",
+      "photoshop",
+      "php",
+      "shopify",
+      "wordpress",
+      "MySQL",
+      "startup",
+      "responsive",
+      "themes",
+      "bootstrap",
+      "insurance",
+      "jQuery",
+      "Ajax"
+    ],
+    "clean_text": "Title: Office Assistant\nCompany: Coalition Technologies\nLocation: Worldwide\nTags: CSS, excel, frontend, git, html, illustrator, magento, photoshop, php, shopify, wordpress, MySQL, startup, responsive, themes, bootstrap, insurance, jQuery, Ajax\nDescription:\nWHY YOU SHOULD APPLY: Coalition Technologies is devoted to delivering clients the highest quality work while providing our team a fun, thriving, and innovative environment. Along with the opportunity for tremendous career growth and rapid advancement, CT offers: The most competitive profit-sharing bonus plan in the industry, paying up to 50% of company profits to full-time employees each month! A highly competitive Paid Time Off plan, promoting quality work-life balance. Subsidized gym memberships to help team members feel their best. Medical, dental, vision, and life insurance packages for all US-based team members. International Health Insurance Reimbursement Program for all international team members, a benefit unique to Coalition. Device upgrade and learning reimbursement programs. Motivating career development plans with clearly defined goals and rewards. Additional job-specific incentives and bonuses. Plus, 100% of our team works remotely with the support of time tracking software. Our company culture specializes in supporting remote team members, and we’ve been doing so for more than a decade. CT welcomes your application, wherever in the world it's coming from! YOU SHOULD HAVE: Willingness to learn, grow, and collaborate with the team and company as a whole. Excellent verbal and written communication skills. A high level of discretion, ethics, and trustworthiness. Intermediate spreadsheet skills (preferred) Innovative thinking and a willingness to challenge existing methods where improvement is possible. Experience in bookkeeping / financial record keeping (preferred). Experience with Google Sheets or Excel, Quickbooks Online, and G-Suite (preferred). The availability to work 40 hours per week from 9:00 am to 6:00 pm PST. A reliable space to work remotely with a fast computer, quality internet, camera, microphone, and speakers. YOUR DUTIES AND TASKS: Answering phones and emails. Completing entry-level bookkeeping, including recording expenses, organizing receipts, and completing other transaction records. Resolving billing issues with clients and internal team members. Providing account access, usage reports, data analysis, and other ad hoc requests for team members. Supporting quality assurance checks of various internal and client facing reporting. Organizing new client contracts, create invoices, and process client payments. Contributing to internal database maintenance, upkeep and data entry. Researching, ordering, & distributing company-wide g"
+  },
+  {
+    "id": "2087132",
+    "title": "Executive Assistant & Accountability Partner (Full‑Time, Remote, ET Hours)",
+    "company": "N/A",
+    "location": "Worldwide",
+    "url": "https://remotive.com/remote-jobs/all-others/executive-assistant-accountability-partner-fulltime-remote-et-hours-2087132",
+    "tags": [
+      "AI/ML",
+      "documentation",
+      "asana",
+      "executive assistant",
+      "SLA",
+      "travel"
+    ],
+    "clean_text": "Title: Executive Assistant & Accountability Partner (Full‑Time, Remote, ET Hours)\nCompany: N/A\nLocation: Worldwide\nTags: AI/ML, documentation, asana, executive assistant, SLA, travel\nDescription:\nAbout the role We are seeking a college‑educated, high‑judgment Executive Assistant to partner with a CEO and spouse across work and family operations. This is a 40 hrs/week, long‑term role in Eastern Time (ET). You will run complex calendars and travel, keep our “family operating system” tight, act as a gentle accountability coach for both principals, and prepare bill payments within a clear approvals workflow. We’re looking for someone who leads up—proactive, thoughtful, and comfortable prompting us toward better outcomes. What you’ll own Calendar & inbox mastery: Orchestrate a fast, high‑stakes calendar; defend focus time; draft agendas/briefs; triage email. Travel end‑to‑end: Book smart, flexible itineraries (US/UK time zones), leverage card/travel benefits, manage changes. Family OS (Google: Maintain a living hub of contacts, vendors, renewals, school/athletics dates, medical appointments, SOPs. Accountability coaching: Weekly 15‑min 1:1 with each principal to set 3 personal goals and one weekly “keystone,” Mid‑week nudges, Friday 15‑min readout (progress, blockers, next experiment). Vendors & projects: Coordinate household vendors; manage multi‑week projects with crisp updates and measurable checkpoints. Bill‑pay prep (simple & safe): Draft bills in BILL (formerly Bill.com) with role‑based approvals (you prepare; principals approve), Use 1Password for shared credentials (least‑privilege access), Use Privacy virtual cards for subscriptions/incidentals (merchant‑locked, spend caps). Documentation & improvement: Keep SOPs current; propose improvements; measure what matters. You bring Bachelor’s degree from an accredited university. 5+ years supporting a founder/CEO or senior executive (remote OK). Exceptional written communication and executive judgment. Demonstrated ability to lead up—anticipate needs, push back diplomatically, and improve the system. Tool fluency: Google Workspace, BILL, 1Password, Privacy (or quick to learn equivalents). Comfortable coordinating across US/UK time zones. Located anywhere and able to work ET hours. Nice to have Exposure to coaching principles (e.g., ICF‑style accountability, active listening), project tools (Asana/ClickUp), and travel perks (e.g., Amex FHR/Virtuoso). Compensation & terms Salary Retention bonuses Performance bonus opportunity tied to measurable outcomes (calendar health, on‑time deliverables, SLA). How to apply Please submit the following.Do not use AI to generate: Resume (1 page) and 150‑word note on a"
+  },
+  {
+    "id": "1956455",
+    "title": "iOS Developer",
+    "company": "nooro",
+    "location": "USA",
+    "url": "https://remotive.com/remote-jobs/software-development/ios-developer-1956455",
+    "tags": [
+      "api",
+      "backend",
+      "git",
+      "ios",
+      "security",
+      "swift",
+      "UI/UX",
+      "Figma",
+      "agile",
+      "healthcare",
+      "startup",
+      "core data",
+      "github",
+      "REST",
+      "MVVM",
+      "mobile development"
+    ],
+    "clean_text": "Title: iOS Developer\nCompany: nooro\nLocation: USA\nTags: api, backend, git, ios, security, swift, UI/UX, Figma, agile, healthcare, startup, core data, github, REST, MVVM, mobile development\nDescription:\nWHO ARE WE? At nooro, we're revolutionizing pain management for seniors. Our platform is transforming how older adults engage with pain management at home. We're on a mission to make wellness more accessible and effective through technology. Check our website here: https://nooro-us.com/ We're a fast-moving startup that works on quick iteration and bold decisions. Our team is lean, agile, and empowered to make meaningful impacts daily. If you enjoy a dynamic environment where ideas become a reality at lightning speed and you're not afraid to wear multiple hats, you'll fit right in. WHAT WILL YOU DO? - Own and drive the development of our iOS application - Build elegant, performant features using **Swift (We’re 100% Swift!)** and **SwiftUI** - Implement complex UI/UX designs from **Figma** with pixel-perfect accuracy - Ensure app performance, quality, and responsiveness - Collaborate with our backend team on API integration - Write clean, modular, and reusable code - Participate in code reviews and architectural decisions - Help shape our mobile development practices HOW TO APPLY? If you believe we're the right fit, please fill in this form: https://forms.gle/xeL6pPbdjMHo11A28 WHAT ARE THE REQUIREMENTS? - 5+ years of professional iOS development experience - Strong expertise in Swift and SwiftUI - Deep understanding of iOS platform capabilities and limitations - Experience with iOS app architecture (MVVM preferred) - Experience with Core Data and local storage solutions - Proficiency in making RESTful API calls and handling responses - Experience with dependency injection on iOS - Strong version control skills with Git/GitHub - Experience with App Store deployment and TestFlight - Knowledge of iOS security best practices APPLYING PROCESS STEP 1 | QUESTIONNAIRE: If you believe we're the right fit, please fill in this form: https://forms.gle/xeL6pPbdjMHo11A28 STEP 2 | TEST: Once we review your form submission, we will send you a test STEP 3 | TECHNICAL INTERVIEW: Once we review your test submission, you will have a call with our development leader STEP 4 | BEHAVIORAL INTERVIEW: After the technical interview, you will have a call with our CEO to talk about the way our company and team members operate in general WHAT DO WE OFFER? - 100% remote work environment - Competitive compensation - Opportunity to make a meaningful impact in healthcare technology - Collaborative, innovative team culture"
+  },
+  {
+    "id": "2086540",
+    "title": "Inside Sales Contractor",
+    "company": "Credit Wellness, LLC",
+    "location": "Worldwide",
+    "url": "https://remotive.com/remote-jobs/sales-business/inside-sales-contractor-2086540",
+    "tags": [
+      "CRM",
+      "google sheets",
+      "financial services",
+      "Inside Sales"
+    ],
+    "clean_text": "Title: Inside Sales Contractor\nCompany: Credit Wellness, LLC\nLocation: Worldwide\nTags: CRM, google sheets, financial services, Inside Sales\nDescription:\nAbout Us We are a financial services start up focusing on helping to improve consumer credit profiles. We are currently seeking KPI driven sales representatives looking to earn up to 45K in their first year while working remotely. We offer comprehensive training and continuous sales coaching to help you meet your financial goals. During our training period we offer a guaranteed training stipend while our trainees are acclimating to the position (*see weekly pay below). If you are a seasoned sales professional looking for the autonomy of a remote position combined with great compensation, we want to hear from you! Compensation Structure This role is 100% commission-based , which means your earning potential is unlimited. In addition, we regularly offer competitive performance-based bonuses to reward hard work and results. Training Period (Weeks 1–4) We invest in your success and want to make sure you’re supported as you get up to speed: Week 1: Commission-only (a chance to start earning right away while learning the ropes). Weeks 2–4: Guaranteed training stipend of $1,000 total – or your commission if it’s higher. You’ll always receive whichever amount benefits you most. Week 2: $250 guaranteed minimum Week 3: $325 guaranteed minimum Week 4: $425 guaranteed minimum By the end of training, you’ll have the skills to maximize commissions, with the safety net of a guaranteed base during your ramp-up period. Post Training Period: Average first year OTE: 25K-35K (US) Annually Top Rep first year OTE: 35K-45K (US) Annually *The above is the average pay you can expect, however, there is unlimited earning potential for those who are financially motivated top performers looking to exceed sales targets. What will you be doing? Educating inbound callers on their credit standing by providing consultations with the goal of enrolling them in one of our services should they be a good fit. We are looking for team members who are: Tech savvy with the ability to navigate digital tools such as SLACK, CRM software, google sheets, etc. Our team uses these digital tools daily. Growth oriented and always looking to learn and acquire new skills. Autonomous self starters who can work independently and efficiently. Team players with the ability to implement feedback from their sales coaches. Patient and professional with clients. Finances can be a difficult topic for some clients to discuss. We are looking for individuals who showcase empathy and professionalism especially under press"
+  },
+  {
+    "id": "2088527",
+    "title": "🇩🇪 EU Freelance Customer Advisor – Inbound Mobile / Prepaid",
+    "company": "hey contact heroes GmbH",
+    "location": "Europe",
+    "url": "https://remotive.com/remote-jobs/customer-service/eu-freelance-customer-advisor-inbound-mobile-prepaid-2088527",
+    "tags": [],
+    "clean_text": "Title: 🇩🇪 EU Freelance Customer Advisor – Inbound Mobile / Prepaid\nCompany: hey contact heroes GmbH\nLocation: Europe\nDescription:\n🇩🇪 This job ad is written in German. 🇩🇪 100% Remote innerhalb der EU (außer Deutschland) Projektstart: Februar – wir suchen 150 neue Partner! Die hey contact heroes starten ein neues, großes Mobilfunk-Projekt im Bereich Prepaid Kundenservice – und dafür suchen wir zuverlässige, motivierte Freelancer , die uns langfristig unterstützen. Wenn Du innerhalb der EU (aber nicht in Deutschland) lebst und Lust hast, als professioneller Customer-Service-Partner mit uns durchzustarten, bist Du bei uns genau richtig! Aufgaben Was Dich erwartet: Freundliche und lösungsorientierte Bearbeitung von Inbound-Anrufen rund um Prepaid, Tarifthemen, SIM-Karten, Aufladungen & technische Basisfragen. Strukturierte Prozesse, klare Vorgaben und ein professionelles Projektumfeld. Flexible Arbeitszeiten im Rahmen des Projekts – ideal für Freelancer, die ihre Zeit selbst planen. Faire Vergütung pro Stunde oder pro Produktivminute (je nach Projektmodell). 100% Remote – Du arbeitest von Deinem Standort innerhalb der EU aus. Schulungsstart im Februar oder März 2026, sichere Dir frühzeitig Deinen Platz: Wir bieten mehrere Schulungsrunden im Februar und März 2026 an, jeweils begrenzt auf eine fixe Anzahl Teilnehmer. Achtung: Die Schulungen finden 8-10 Tage tagsüber in Vollzeit statt mit 8 Stunden. Qualifikation Was Du als Freelancer unbedingt mitbringen solltest: 1. Rechtliche & formale Voraussetzungen Gewerbeanmeldung / Selbstständigkeit in einem EU-Land (Pflicht) Gültige Umsatzsteuer-ID (USt-IdNr.) , um ordnungsgemäße Rechnungen an uns ausstellen zu können Wohnsitz in einem EU-Mitgliedsstaat (außer Deutschland) Fähigkeit zur Ausstellung von monatlichen Rechnungen Einhaltung von Datenschutz, Vertraulichkeit und NDA-Anforderungen Eigenständige Organisation Deiner Arbeitszeiten und Kapazitäten 2. Fachliche & persönliche Anforderungen Deutschkenntnisse auf C1-Niveau oder höher Erste Erfahrung im telefonischen Kundenservice von Vorteil Professionelle Kommunikation, Zuverlässigkeit und hohe Serviceorientierung Selbstständige Arbeitsweise und hohe Prozessdisziplin Langfristige Bereitschaft zur Projektmitarbeit 3. Technische Voraussetzungen Leistungsstarke und stabile Internetverbindung (mind. 50 Mbit/s) Professionelles Headset, zwei Monitore, Webcam Ruhiger, ungestörter Arbeitsplatz im Home-Office Fähigkeit, unsere Tools & Systeme sicher zu nutzen 4. Verfügbarkeit Regelmäßig planbare Verfügbarkeiten und Kapazitäten Verlässliche Teilnahme an allen Schulungstagen Bereitschaft zu Schichten innerha"
+  },
+  {
+    "id": "1185979",
+    "title": "Freelance Writer",
+    "company": "IAPWE",
+    "location": "Worldwide",
+    "url": "https://remotive.com/remote-jobs/writing/freelance-writer-1185979",
+    "tags": [
+      "REST"
+    ],
+    "clean_text": "Title: Freelance Writer\nCompany: IAPWE\nLocation: Worldwide\nTags: REST\nDescription:\nOur organization is seeking content writers to create articles and blog posts on a variety of topics. The rate of pay is $20 per 100 words (this comes out to approximately $100 per article or $50 per hour). Some topics you may be asked to write about include the following (you can always turn down a topic if you do not feel comfortable writing about it, however if you have experience or expertise in a specific area, please let us know): Health & beauty Fitness Home Decor Fashion Sports Do it yourself Finance Legal Medical Family/Parenting Relationships Real Estate Restaurants Contracting (plumbing, pool building, remodeling, etc.) These are just some of the more general industries and topics that we cover. Requirements : We ask that all work be completed using a word processor such as Microsoft Word or Open Office A reliable internet connection and the ability to meet deadlines Good communication skills and respond in a timely manner to editorial staff when they ask for updates on tasks, etc Work well as a team member with the rest of our content management and editorial staff Note : Applicants to this job signaled that accessing some writing tasks may require payment."
+  },
+  {
+    "id": "1749306",
+    "title": "Copywriter",
+    "company": "Coalition Technologies",
+    "location": "Worldwide",
+    "url": "https://remotive.com/remote-jobs/writing/copywriter-1749306",
+    "tags": [
+      "accounting",
+      "excel",
+      "research",
+      "data analysis",
+      "bookkeeping",
+      "google sheets",
+      "quickbooks",
+      "data entry",
+      "insurance",
+      "G Suite"
+    ],
+    "clean_text": "Title: Copywriter\nCompany: Coalition Technologies\nLocation: Worldwide\nTags: accounting, excel, research, data analysis, bookkeeping, google sheets, quickbooks, data entry, insurance, G Suite\nDescription:\nWHO WE'RE LOOKING FOR The ideal copywriter has excellent English writing skills and is excited to write high-quality, SEO-driven content that aligns with detailed, client-specific guidelines. Projects most commonly include writing web pages for eCommerce and lead generation business sites such as category pages, product descriptions, and blog posts. Our clientele is constantly evolving. We produce content for these and many other industry verticals: Fashion (both mass-market and luxury) Skincare & Beauty Tech & Software** Finance & Investing** Law (family law, product liability, divorce, etc.)** Education Home Improvement Automobiles & Motorcycles (OEM and aftermarket accessories) Health and Wellness** Medical / Clinical** Digital Marketing SEO / PR / Advertising / Marketing** **Writers with a background in these highly specialized fields are strongly encouraged to apply. The ideal candidate for this position is a multifaceted technical and creative writer with at least two to four years of professional, non-academic experience. Candidates should understand how to write content that effortlessly blends SEO best practices and brand priorities for finished work that’s engaging, creative, and ROI-driven. Candidates should also be willing and able to complete careful research in order to gain a strong understanding of various industries. Candidates should be prepared to provide portfolios featuring published work. Once an offer has been extended, writers will be asked to take a brief training course. Compensation Writers are paid on a per-word basis. The rate is assessed according to our KPI rubric (key performance indicators) with an automatic raise after 400 and 800 pages have gone live on our client's websites. Initial compensation is up to $0.06 per word with $0.034 per word being the most typical compensation level. This is $30 or $17 per page of 500 words. After 400 pages live, the top marginal rate increases to $0.064 per word with the most typical rate of $0.038 per word, or $32 and $19 per page. After 800 pages live, the top marginal rate increases to $0.07 per word with $0.044 per word being the most typical, or $35 and $22 per page."
+  },
+  {
+    "id": "2082736",
+    "title": "Senior Amazon Brand Manager",
+    "company": "GNO Partners",
+    "location": "Worldwide",
+    "url": "https://remotive.com/remote-jobs/marketing/senior-amazon-brand-manager-2082736",
+    "tags": [
+      "amazon",
+      "backend",
+      "project management",
+      "PPC"
+    ],
+    "clean_text": "Title: Senior Amazon Brand Manager\nCompany: GNO Partners\nLocation: Worldwide\nTags: amazon, backend, project management, PPC\nDescription:\nWhy Join Us? Fully remote Amazon consulting agency. High-performance culture: hard work, speed, over-delivery, and trust. Competitive Compensation: Total OTE of $220,000-$300,000+. Base Salary: $120,000 Performance-Based Earnings: Realistically getting an extra $180,000 per year based on performance, and more (no cap). Work with a team that lives and breathes Amazon while having fun doing it. Who We’re Looking For: We are seeking a Senior Amazon Brand Manager who deeply understands Amazon FBA, enjoys strategizing for brand growth, and can tackle complex challenges with precision and speed . Key Skills & Experience: Organic Ranking Mastery : Product launches, ranking strategies, and algorithm insights. Amazon PPC Expertise: Strategy + execution, proven hands on experience managing minimum $50K+/mo budgets . Brand Management: Experience managing Private Label brands generating a minimum of $10M in annual revenue Logistics & Backend: Strong grasp of COGs, fees, inventory, and profitability (P&L) optimization . Amazon Catalog Troubleshooter: Proven expertise in diagnosing and resolving complex catalog issues. Responsibilities: Lead weekly strategy calls with clients, ensuring project progress. Solve Amazon challenges and guide clients through key projects. Track progress and provide clear next steps. Offer daily support via Slack & Email. Continuously improve our consulting systems. Attend weekly training and team meetings. Qualifications: Full-time, remote. 3+ years Amazon FBA experience , managing brands $10M+ in revenue minimum. PPC expertise: Managed $50k monthly ad budgets minimum . Seller Central pro: Navigate and optimize quickly. Strong project management & client communication skills. Positive, proactive, and client-focused personality. Fluent in English. Ambitious and driven, with a relentless work ethic to maximize earning potential If you're an Amazon expert, you're driven, strategic, and thrive in high-growth environments, we want you on our team! Please submit your application through Breezy HR: 👉 https://gno-partners.breezy.hr/p/154fdc8fa066-senior-amazon-brand-manager?state=published *For referrals, email us at HR @ gnopartners.com and CC the candidate you’re introducing."
+  },
+  {
+    "id": "2080462",
+    "title": "Senior Performance Marketer (Full Remote - Worldwide)",
+    "company": "EverAI",
+    "location": "Worldwide",
+    "url": "https://remotive.com/remote-jobs/marketing/senior-performance-marketer-full-remote-worldwide-2080462",
+    "tags": [
+      "AI/ML",
+      "automation",
+      "customer acquisition",
+      "user acquisition",
+      "testing",
+      "paid media",
+      "CPA",
+      "performance marketing"
+    ],
+    "clean_text": "Title: Senior Performance Marketer (Full Remote - Worldwide)\nCompany: EverAI\nLocation: Worldwide\nTags: AI/ML, automation, customer acquisition, user acquisition, testing, paid media, CPA, performance marketing\nDescription:\nOur Vision & Products 🚀 EverAI — Building the Future of AI Companionship One of the Top 15 Largest & Fastest-Growing AI Companies in the World 30+ Million Users in under 2 years — Help Us Reach 100M first, 500M next At EverAI , we’re shaping what it means to connect with AI. With 30+ million users and counting , we're not just building products — we're creating entirely new categories. Our flagship product is the world’s largest AI girlfriend/boyfriend platform , redefining relationships for millions. It is governed by our proprietary moderation system, EverGuard — an internal AI designed to ensure everything we build is safe, ethical, and human-first . And we’re only just getting started! Our Team We are an enthusiastic, passionate and hardworking team of 70 people. Our founding team has strong entrepreneurial experience building and scaling web products from 0 to IPO. Alexis Soulopoulos [CEO] • 10+ years in Tech Executive Leadership • Co-Founder Mad Paws Holdings (from 0 to IPO) • Forbes 30 under 30 + Deloitte TechFast50 ’22 & ‘23 Michael Monin [Co-founder & CTO] • 10+ years as CTO / COO (web2/web3), 1+ year in AI/LLM • Serial-entrepreneur: MTK Digital (exited / 0->$20m revenue) and Zipchat (AI Chatbot for E-commerce brands) Thomas Lacroix [Co-founder & CMO] • 8+ years in Customer Acquisition & E-commerce Growth • Serial-entrepreneur: Curatible (sold to Blackstone) and MTK Digital (exited / 0->$20m revenue) Maruša Fasano [CFO/Legal] • 25+ years in Finance, Strategy, M&A • Ex-CFO/M&A @Curatible (exited to Blackstone) • Ex-President of the Board @SotremoSA (exited) • Co-founder/CFO @SoftOne (exited) Your Role This is a hands-on role for someone who can execute fast, iterate with creative and funnel inputs, and scale what works. You’ll inherit high-performing campaigns and work directly with our CMO to double down on growth. You’ll then also have the opportunity to test and scale new channels (TikTok, Meta, Snapchat, Native, ASA) depending on performance and market constraints. Your Responsibilities Campaign Ownership and Scaling Take the lead on one or two paid acquisition channels across direct-buy and programmatic networks (e.g., ExoClick, TrafficStars, TrafficJunky), with potential to expand scope based on performance Contribute to building scalable acquisition funnels — from execution to iteration — with aggressive growth targets in mind Run high-velocity testing loops (creatives, audiences, placements) to improve CAC and LTV Performance Analysis and "
+  },
+  {
+    "id": "1987878",
+    "title": "Language teachers",
+    "company": "AE Virtual Class S.A",
+    "location": "Americas",
+    "url": "https://remotive.com/remote-jobs/education/language-teachers-1987878",
+    "tags": [
+      "teaching"
+    ],
+    "clean_text": "Title: Language teachers\nCompany: AE Virtual Class S.A\nLocation: Americas\nTags: teaching\nDescription:\nDescription: AE Virtual Class, member of Academia Europea Group, leader in language teaching, with 56 years of experience and the largest teaching staff in the Americas! We are looking for language enthusiasts who want to be part of our great family! Experience is NOT a requirement! We teach you how to teach! Job Requirements: Laptop (with webcam). Stable internet connection (15 Mbps). Attitude. Dynamism. Afternoon and/or evening shifts (Central America time zone). Excellent Mandarin, German, Italian or French proficiency (C1-C2). Main responsibilities of the position: Motivate students. Generate interest in cultures and languages. Prepare reports. Evaluations."
+  }
+]
