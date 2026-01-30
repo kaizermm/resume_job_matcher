@@ -6,9 +6,16 @@ from pypdf import PdfReader
 from together import Together
 import os
 import re
+import time
 
 # Load API key
-client = Together(api_key=os.environ.get("TOGETHER_API_KEY"))
+TOGETHER_API_KEY = os.environ.get("TOGETHER_API_KEY")
+
+if not TOGETHER_API_KEY:
+    st.error("TOGETHER_API_KEY not found. Set it in your .env file.")
+    st.stop()
+
+client = Together(api_key=TOGETHER_API_KEY)
 
 # Load job vectors and metadata
 job_vectors = np.load("data/index/job_vectors.npy")
@@ -30,14 +37,26 @@ def extract_text_from_pdf(file):
     text = ""
     for page in reader.pages:
         text += page.extract_text() or ""
-    return text[:2000]
+    return text[:500]
 
-def embed_text(text):
-    resp = client.embeddings.create(
-        model=EMBED_MODEL,
-        input=text
-    )
-    return np.array(resp.data[0].embedding, dtype="float32")
+def embed_text(text, retries=3):
+    text = text[:500]  # safety limit
+
+    for attempt in range(retries):
+        try:
+            resp = client.embeddings.create(
+                model=EMBED_MODEL,
+                input=text
+            )
+            return resp.data[0].embedding
+
+        except Exception as e:
+            if attempt < retries - 1:
+                st.warning(f"API busy, retrying... ({attempt+1}/{retries})")
+                time.sleep(2)
+            else:
+                st.error("Together API is currently overloaded. Please try again in a few minutes.")
+                st.stop()
 
 def build_prompt(resume, job):
     return f"""
@@ -63,7 +82,8 @@ def parse_output(text):
 if uploaded_file:
     resume_text = extract_text_from_pdf(uploaded_file)
     st.success("Resume uploaded successfully!")
-
+    MAX_CHARS = 500
+    resume_text = resume_text[:MAX_CHARS]
     if st.button("🔍 Find Matching Jobs"):
         with st.spinner("Matching jobs..."):
             resume_vec = embed_text(resume_text)
