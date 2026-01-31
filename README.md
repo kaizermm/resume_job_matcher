@@ -67,25 +67,24 @@ Streamlit Web App
 ```text
 resume_job_matcher/
 │
-├── app.py                  # Streamlit web app (main tool)
-├── README.md               # Project documentation
+├── app.py                  # Streamlit web app
+├── README.md
 ├── requirements.txt
-│
-├── data/
-│   ├── resume/             # User resume PDF
-│   ├── jobs/               # Raw & cleaned job data
-│   └── index/              # FAISS index and embeddings
+├── .gitignore
 │
 ├── src/
-│   ├── 01_fetch_jobs.py
-│   ├── 02_clean_jobs.py
-│   ├── 03_extract_resume.py
-│   ├── 04_embed_jobs.py
-│   ├── 05_build_faiss.py
-│   ├── 06_embed_resume.py
-│   ├── 07_score_explain.py
+│   ├── __init__.py
+│   ├── fetch_jobs.py           # Fetch jobs (Remotive API)
+│   ├── clean_jobs.py           # Clean job descriptions
+│   ├── embed_jobs.py           # Embed jobs (Together.ai)
+│   ├── build_faiss_index.py    # Build FAISS index
+│   ├── match_jobs.py           # Resume → job matching logic
+│   └── score_explain.py        # LLM scoring & explanation
 │
-└── .venv/
+└── data/                   # Generated at runtime (gitignored)
+    ├── jobs/
+    ├── index/
+    └── resume/
 
 ```
 
@@ -273,11 +272,11 @@ Outlier.ai can be used to:
 | Purpose | File |
 | --- | --- |
 | Web UI | `app.py` |
-| Resume extraction | `src/03_extract_resume.py` |
-| Job cleaning | `src/02_clean_jobs.py` |
-| Embedding model | `src/04_embed_jobs.py` |
-| Matching logic | `src/05_match_jobs.py` |
-| Scoring & explanation | `src/07_score_explain.py` |
+| Resume extraction | `src/extract_resume.py` |
+| Job cleaning | `src/clean_jobs.py` |
+| Embedding model | `src/embed_jobs.py` |
+| Matching logic | `src/match_jobs.py` |
+| Scoring & explanation | `src/score_explain.py` |
 
 * * *
 
