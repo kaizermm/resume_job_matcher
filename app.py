@@ -1,116 +1,69 @@
 import streamlit as st
-import numpy as np
+import tempfile
+from pathlib import Path
 import json
-import faiss
-from pypdf import PdfReader
+
+from src.extract_resume import extract_text
+from src.match_jobs import load_faiss_index, match_resume_to_jobs
+from src.score_explain import score_job
+
 from together import Together
 import os
-import re
-import time
+from pathlib import Path
+import json
+from pathlib import Path
 
-# Load API key
-TOGETHER_API_KEY = os.environ.get("TOGETHER_API_KEY")
+CLEAN_JOBS_PATH = Path("data/jobs/jobs_clean.json")
+clean_jobs = json.loads(CLEAN_JOBS_PATH.read_text(encoding="utf-8"))
 
-if not TOGETHER_API_KEY:
-    st.error("TOGETHER_API_KEY not found. Set it in your .env file.")
-    st.stop()
 
-client = Together(api_key=TOGETHER_API_KEY)
 
-# Load job vectors and metadata
-job_vectors = np.load("data/index/job_vectors.npy")
-with open("data/index/job_meta.json", "r", encoding="utf-8") as f:
-    job_meta = json.load(f)
+# --------------------
+# Config
+# --------------------
+INDEX_PATH = "data/index/faiss.index"
+META_PATH = "data/index/job_meta.json"
 
-index = faiss.read_index("data/index/faiss.index")
+client = Together(api_key=os.getenv("TOGETHER_API_KEY"))
 
-CHAT_MODEL = "meta-llama/Llama-3.2-3B-Instruct-Turbo"
-EMBED_MODEL = "togethercomputer/m2-bert-80M-8k-retrieval"
+st.set_page_config(page_title="Resume Job Matcher", layout="wide")
+st.title("📄 Resume → Job Matcher AI")
 
-st.title("📄 Resume Job Matcher AI")
-st.write("Upload your resume PDF and get top matching jobs with scores")
+st.write("Upload your resume and get top matching jobs with AI score & explanation.")
 
-uploaded_file = st.file_uploader("Upload your resume (PDF)", type=["pdf"])
-
-def extract_text_from_pdf(file):
-    reader = PdfReader(file)
-    text = ""
-    for page in reader.pages:
-        text += page.extract_text() or ""
-    return text[:500]
-
-def embed_text(text, retries=3):
-    text = text[:500]  # safety limit
-
-    for attempt in range(retries):
-        try:
-            resp = client.embeddings.create(
-                model=EMBED_MODEL,
-                input=text
-            )
-            return resp.data[0].embedding
-
-        except Exception as e:
-            if attempt < retries - 1:
-                st.warning(f"API busy, retrying... ({attempt+1}/{retries})")
-                time.sleep(2)
-            else:
-                st.error("Together API is currently overloaded. Please try again in a few minutes.")
-                st.stop()
-
-def build_prompt(resume, job):
-    return f"""
-Return ONLY:
-
-FIT_SCORE: 0-100
-SUMMARY: one sentence
-
-RESUME: {resume}
-JOB: {job}
-"""
-
-def parse_output(text):
-    score = 0
-    summary = ""
-    for line in text.splitlines():
-        if line.startswith("FIT_SCORE"):
-            score = int(re.findall(r"\d+", line)[0])
-        if line.startswith("SUMMARY"):
-            summary = line.split(":",1)[1].strip()
-    return score, summary
+# --------------------
+# Upload Resume
+# --------------------
+uploaded_file = st.file_uploader("Upload Resume (PDF)", type=["pdf"])
 
 if uploaded_file:
-    resume_text = extract_text_from_pdf(uploaded_file)
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
+        tmp.write(uploaded_file.read())
+        resume_path = tmp.name
+
     st.success("Resume uploaded successfully!")
-    MAX_CHARS = 500
-    resume_text = resume_text[:MAX_CHARS]
-    if st.button("🔍 Find Matching Jobs"):
-        with st.spinner("Matching jobs..."):
-            resume_vec = embed_text(resume_text)
 
-            D, I = index.search(np.array([resume_vec]), 5)
+    resume_text = extract_text(Path(resume_path))
 
-            results = []
-            for idx in I[0]:
-                job = job_meta[idx]
+    st.subheader("Extracted Resume Text (preview)")
+    st.text(resume_text[:500])
 
-                prompt = build_prompt(resume_text, job["clean_text"])
-                resp = client.chat.completions.create(
-                    model=CHAT_MODEL,
-                    messages=[{"role":"user","content":prompt}],
-                    temperature=0
-                )
-                output = resp.choices[0].message.content
-                score, summary = parse_output(output)
+    if st.button("🔍 Find Best Jobs"):
+        st.info("Matching jobs...")
 
-                results.append((score, job, summary))
+        index, meta = load_faiss_index(INDEX_PATH, META_PATH)
 
-            results.sort(reverse=True)
+        top_jobs = match_resume_to_jobs(resume_text, index, meta, client ,top_k=5)
 
-            for i, (score, job, summary) in enumerate(results,1):
-                st.subheader(f"#{i} {job['title']} — {job['company']}")
-                st.write(f"📍 {job['location']}")
-                st.write(f"🔗 {job['url']}")
-                st.write(f"✅ Score: {score}")
-                st.write(f"🧠 {summary}")
-                st.divider()
+        results = []
+
+        for job in top_jobs:
+            job_clean_text = clean_jobs[job["idx"]]["clean_text"]
+            scoring = score_job(client, resume_text, job_clean_text)
+
+            st.markdown(f"### {job['title']} — {job['company']}")
+            st.write(f"Score: {scoring['fit_score']}/100")
+            st.write(f"Matched Skills: {', '.join(scoring['matched_skills'])}")
+            st.write(f"Missing Skills: {', '.join(scoring['missing_skills'])}")
+            st.write(scoring["one_sentence_summary"])
+            st.markdown(f"[Job link]({job['url']})")
