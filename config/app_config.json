@@ -1,0 +1,114 @@
+{
+  "models": {
+    "embed_model": "local:sentence-transformers/all-MiniLM-L6-v2",
+    "chat_model": "meta-llama/Llama-3.2-3B-Instruct-Turbo",
+    "rerank_model": "Salesforce/Llama-Rank-V1"
+  },
+  "limits": {
+    "num_jobs_fetch": 300,
+    "top_k_retrieve": 10,
+    "top_n_score": 5,
+    "max_resume_chars_embed": 1100,
+    "max_resume_chars_prompt": 1500,
+    "max_job_chars_prompt": 1500,
+    "max_job_chars_clean": 2500,
+    "llm_max_tokens": 220,
+    "embed_batch_size": 64
+  },
+  "roles": {
+    "ML Engineer": [
+      "ml engineer",
+      "machine learning engineer",
+      "mlops",
+      "model training",
+      "sklearn",
+      "pytorch",
+      "tensorflow",
+      "model deployment",
+      "feature engineering"
+    ],
+    "LLM Engineer": [
+      "llm",
+      "large language model",
+      "rag",
+      "retrieval augmented",
+      "embeddings",
+      "vector search",
+      "langchain",
+      "openai",
+      "prompt engineering",
+      "fine-tuning",
+      "agent",
+      "chatbot"
+    ],
+    "Data Scientist": [
+      "data scientist",
+      "statistics",
+      "statistical modeling",
+      "experiment design",
+      "ab testing",
+      "regression",
+      "classification",
+      "hypothesis testing",
+      "analytics",
+      "jupyter",
+      "pandas",
+      "numpy"
+    ],
+    "Python Dev": [
+      "python developer",
+      "backend",
+      "api development",
+      "fastapi",
+      "flask",
+      "django",
+      "rest api",
+      "microservices",
+      "python engineer",
+      "software engineer python"
+    ],
+    "Frontend Python Dev": [
+      "streamlit",
+      "dash",
+      "gradio",
+      "plotly",
+      "bokeh",
+      "frontend",
+      "data visualization",
+      "dashboard",
+      "ui developer",
+      "react",
+      "typescript",
+      "javascript"
+    ]
+  },
+  "prompts": {
+    "score_job": {
+      "version": "v2",
+      "file": "config/prompts/score_job_v2.txt",
+      "description": "Scores resume vs job, returns structured KEY:VALUE output",
+      "output_fields": {
+        "fit_score": "FIT_SCORE",
+        "matched_skills": "MATCHED_SKILLS",
+        "missing_skills": "MISSING_SKILLS",
+        "recommendations": "RECOMMENDATIONS",
+        "summary": "SUMMARY"
+      }
+    }
+  },
+  "noise_patterns": [
+    "equal opportunity employer.*",
+    "we are an equal opportunity employer.*",
+    "accommodation.*disability.*",
+    "all qualified applicants.*",
+    "background check.*",
+    "eeo.*employer.*",
+    "pursuant to applicable law.*",
+    "we celebrate diversity.*"
+  ],
+  "job_api": {
+    "url": "https://remotive.com/api/remote-jobs",
+    "timeout_seconds": 30,
+    "max_retries": 3
+  }
+}

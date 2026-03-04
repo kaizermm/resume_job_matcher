@@ -1,315 +1,309 @@
-# 📄 Resume Job Matcher AI
+# 🎯 Resume Job Matcher AI
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
-![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+> AI-powered semantic job matching — upload your resume, get ranked matches with fit scores, skills gap analysis, and actionable recommendations.
 
-**Resume Job Matcher AI** is an AI-powered web application that analyzes a user’s resume (PDF) and automatically finds the best-matching job postings using **semantic search, embeddings, and LLM-based scoring**.
-
-It returns **ranked job matches**, **fit scores**, and **human-readable explanations** — all inside a clean **Streamlit web app**.
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=flat-square)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.31+-red?style=flat-square)
+![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-green?style=flat-square)
+![Together.ai](https://img.shields.io/badge/Together.ai-LLM-purple?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
 ---
 
 ## 📚 Table of Contents
 
-- [Features](#-features)
 - [How It Works](#-how-it-works)
+- [Architecture Diagram](#-architecture-diagram)
+- [Flow Diagram](#-flow-diagram)
+- [Technology Stack](#-technology-stack)
 - [Project Structure](#-project-structure)
-- [Requirements](#-requirements)
-- [Installation](#-installation)
-- [Environment Setup](#-environment-setup-togetherai)
-- [Run Locally](#-run-locally)
-- [Using Your Resume](#-using-your-resume)
-- [Example Output](#-example-output)
-- [Deploy Online](#-deploy-online-streamlit-cloud)
-- [Outlier.ai Integration](#-outlierai-integration-optional)
-- [Customization](#-customization-guide)
-- [Cost Control](#-cost-control)
-- [Future Improvements](#-future-improvements)
-- [License](#-license)
-
----
-
-## ✨ Features
-
-- 📄 Upload resume (PDF)
-- 🔍 Semantic job matching with FAISS
-- 🧠 AI-generated fit score (0–100)
-- 📝 Explanation for each job match
-- ⚡ Fast vector similarity search
-- 💸 Runs under a **$5 budget**
-- 🌐 Web UI built with Streamlit
+- [Quick Start](#-quick-start)
+- [Configuration Reference](#-configuration-reference)
+- [Cost Estimate](#-cost-estimate)
+- [Files to Remove](#-files-to-remove)
 
 ---
 
 ## 🧠 How It Works
 
-```text
-Resume PDF
-   ↓
-Text Extraction
-   ↓
-Embeddings (Together.ai)
-   ↓
-FAISS Vector Search
-   ↓
-Top Job Matches
-   ↓
-LLM Scoring + Explanation
-   ↓
-Streamlit Web App
+The system runs in two phases:
+
+**Phase 1 — Build (run once):** Fetch remote jobs → clean text → embed as vectors → store in FAISS index.
+
+**Phase 2 — Match (every run):** Upload resume → embed resume → cosine search FAISS → score top-K jobs with LLM → display results.
+
+Zero hardcoded prompts or model names in Python. Everything is driven by `config/app_config.json` and `config/prompts/*.txt`.
+
+---
+
+## 🏗 Architecture Diagram
 
 ```
+┌──────────────────────────────────────────────────────────────────────────┐
+│                        RESUME JOB MATCHER                                │
+├──────────────────┬───────────────────────┬───────────────────────────────┤
+│  DATA PIPELINE   │    VECTOR LAYER        │       APP LAYER               │
+│  (run once)      │                        │       (every request)         │
+├──────────────────┼───────────────────────┼───────────────────────────────┤
+│                  │                        │                               │
+│  🌐 Remotive API │                        │  👤 User uploads Resume       │
+│  fetch_jobs.py   │                        │  (PDF or TXT)                 │
+│       │          │                        │         │                     │
+│       ▼          │                        │         ▼                     │
+│  🧹 clean_jobs   │                        │  🔢 Local Embedder            │
+│  Strip HTML      │                        │  sentence-transformers        │
+│  Remove noise    │                        │  all-MiniLM-L6-v2             │
+│       │          │                        │         │                     │
+│       ▼          │                        │         ▼                     │
+│  🔢 embed_jobs   │   ┌────────────────┐   │  🗄 FAISS Search              │
+│  sentence-       │──▶│  FAISS Index   │◀──│  top-K nearest jobs           │
+│  transformers    │   │  IndexFlatIP   │   │         │                     │
+│       │          │   │  384-dim vecs  │   │         ▼                     │
+│       ▼          │   │  cosine sim    │   │  🤖 Together.ai LLM           │
+│  💾 job_vectors  │   └────────────────┘   │  Llama-3.2-3B-Turbo           │
+│  .npy + .index   │                        │  Fit score + explanation      │
+│                  │                        │         │                     │
+│                  │                        │         ▼                     │
+│                  │                        │  🎯 Streamlit Results UI      │
+│                  │                        │  Score · Skills · Recs        │
+└──────────────────┴───────────────────────┴───────────────────────────────┘
+```
 
+---
 
-## 🗂 Project Structure
-```text
+## 🔄 Flow Diagram
+
+```
+User uploads Resume (PDF / TXT)
+              │
+              ▼
+┌─────────────────────────────────┐
+│        STREAMLIT FRONTEND       │
+│  Role selector · K slider       │
+│  File uploader · Run button     │
+└──────────────┬──────────────────┘
+               │
+    ┌──────────▼───────────┐
+    │   LOCAL EMBEDDER     │
+    │  sentence-transformers│
+    │  all-MiniLM-L6-v2    │
+    │  (free, runs on CPU)  │
+    └──────────┬───────────┘
+               │  resume vector (384-dim)
+    ┌──────────▼───────────┐
+    │     FAISS INDEX      │
+    │   IndexFlatIP        │
+    │   cosine similarity  │       ◀── Pre-built from job embeddings
+    │   returns top-K jobs │
+    └──────────┬───────────┘
+               │  top-K job texts + metadata
+    ┌──────────▼───────────┐
+    │   TOGETHER.AI LLM    │
+    │  Llama-3.2-3B-Turbo  │
+    │  Structured prompt   │       ◀── Prompt from config/prompts/score_job_v2.txt
+    │  FIT_SCORE: 0-100    │
+    │  MATCHED_SKILLS: ... │
+    │  MISSING_SKILLS: ... │
+    │  RECOMMENDATIONS: ...│
+    │  SUMMARY: ...        │
+    └──────────┬───────────┘
+               │
+    ┌──────────▼───────────┐
+    │    RESULTS UI        │
+    │  Ranked job cards    │
+    │  Colour-coded scores │
+    │  Skills gap pills    │
+    │  Apply links         │
+    └──────────────────────┘
+```
+
+---
+
+## 🛠 Technology Stack
+
+| Layer | Technology | Purpose | Cost |
+|-------|-----------|---------|------|
+| **Frontend** | Streamlit 1.31+ | Web UI — file upload, sliders, results display, model switcher | Free |
+| **Embedding** | sentence-transformers `all-MiniLM-L6-v2` | Local CPU vector embeddings for resume and jobs | Free (local) |
+| **Vector Search** | FAISS `faiss-cpu` | Cosine similarity search across all job vectors | Free |
+| **LLM Scoring** | Together.ai `Llama-3.2-3B-Instruct-Turbo` | Structured fit score, skills gap, recommendations | ~$0.01/run |
+| **Job Data** | Remotive API | Fetches 300+ live remote job listings (no key needed) | Free |
+| **Model Search** | Together.ai `/v1/models` | Sidebar button to discover available serverless models | Free |
+| **Resume Parsing** | pypdf | Extracts text from uploaded PDF resumes | Free |
+| **Config** | JSON + `.txt` prompts | Zero hardcoded strings — fully config-driven at runtime | — |
+| **Env** | python-dotenv | Load `TOGETHER_API_KEY` from `.env` file locally | Free |
+
+---
+
+## 📁 Project Structure
+
+```
 resume_job_matcher/
 │
-├── app.py                  # Streamlit web app
-├── README.md
+├── app.py                        ← Streamlit web UI (main entry point)
+├── write_files.py                ← Regenerates all src/ files from scratch
 ├── requirements.txt
 ├── .gitignore
 │
+├── config/
+│   ├── app_config.json           ← All settings: models, limits, roles, noise patterns
+│   └── prompts/
+│       └── score_job_v2.txt      ← LLM prompt template (no Python hardcoding)
+│
 ├── src/
 │   ├── __init__.py
-│   ├── fetch_jobs.py           # Fetch jobs (Remotive API)
-│   ├── clean_jobs.py           # Clean job descriptions
-│   ├── embed_jobs.py           # Embed jobs (Together.ai)
-│   ├── build_faiss_index.py    # Build FAISS index
-│   ├── match_jobs.py           # Resume → job matching logic
-│   └── score_explain.py        # LLM scoring & explanation
+│   ├── config.py                 ← Config loader + 10 helper functions
+│   ├── embedder.py               ← Unified local/API embedding abstraction
+│   ├── fetch_jobs.py             ← Pulls jobs from Remotive API
+│   ├── clean_jobs.py             ← HTML stripper + noise pattern remover
+│   ├── embed_jobs.py             ← Batch embeds all clean jobs
+│   ├── build_faiss_index.py      ← Builds FAISS index from job vectors
+│   ├── match_jobs.py             ← Embeds resume → FAISS search → ranked matches
+│   ├── score_explain.py          ← LLM scoring + KV output parser
+│   └── model_search.py           ← Together.ai model discovery + config updater
 │
-└── data/                   # Generated at runtime (gitignored)
+└── data/                         ← Generated at runtime (gitignored)
     ├── jobs/
+    │   ├── jobs_raw.json         ← Raw Remotive API response
+    │   └── jobs_clean.json       ← Cleaned job descriptions
     ├── index/
-    └── resume/
-
+    │   ├── job_vectors.npy       ← Embedding matrix
+    │   ├── faiss.index           ← FAISS binary index
+    │   └── job_meta.json         ← Job metadata (title, company, url, tags)
+    └── resume/                   ← Drop your resume PDF here (optional)
 ```
 
-* * *
+---
 
-## 🔑 Requirements
+## ⚡ Quick Start
 
--   Python 3.10+
-    
--   Together.ai API key
-    
--   Internet connection
+### 1. Install dependencies
 
-   
+```powershell
+pip install -r requirements.txt
+pip install sentence-transformers
+```
 
-Install dependencies:
+### 2. Set your Together.ai API key
 
-`pip install streamlit pypdf together faiss-cpu numpy`
+```powershell
+# PowerShell
+$env:TOGETHER_API_KEY = "your_key_here"
 
-* * *
+# Or permanently
+setx TOGETHER_API_KEY "your_key_here"
+```
 
-## 🔐 Environment Setup (Together.ai)
+### 3. Write all source files
 
-Set your API key:
+```powershell
+python write_files.py
+```
 
-### Windows (PowerShell)
+### 4. Run the data pipeline
 
-`setx TOGETHER_API_KEY "your_api_key_here"`
+```powershell
+python -m src.fetch_jobs          # Fetch jobs from Remotive API
+python -m src.clean_jobs          # Clean and normalize job text
+python -m src.embed_jobs          # Embed jobs as vectors (first run downloads ~90MB model)
+python -m src.build_faiss_index   # Build FAISS index
+```
 
-Restart the terminal after setting it.
+### 5. Launch the app
 
-Verify:
+```powershell
+streamlit run app.py
+```
 
-`python -c "import os; print(os.environ.get('TOGETHER_API_KEY'))"`
+Open [http://localhost:8501](http://localhost:8501), upload your resume, and click **Find My Best Jobs**.
 
-* * *
+---
 
-## 🧠 How It Works (Pipeline)
+## ⚙️ Configuration Reference
 
-1.  Fetch job postings (Remotive API)
-    
-2.  Clean job descriptions
-    
-3.  Extract resume text from PDF
-    
-4.  Embed jobs and resume (Together.ai embeddings)
-    
-5.  Build FAISS vector index
-    
-6.  Retrieve top matching jobs
-    
-7.  Score matches using LLM
-    
-8.  Display results in Streamlit web app
-    
+All settings in `config/app_config.json`. No model names, limits, or prompts are hardcoded in Python.
 
-* * *
+| Key | Default | Description |
+|-----|---------|-------------|
+| `models.embed_model` | `local:sentence-transformers/all-MiniLM-L6-v2` | Embedding model. Prefix `local:` = runs via sentence-transformers. Otherwise calls Together.ai API. |
+| `models.chat_model` | `meta-llama/Llama-3.2-3B-Instruct-Turbo` | LLM used for fit scoring and explanation |
+| `models.rerank_model` | `Salesforce/Llama-Rank-V1` | Reserved for future reranking |
+| `limits.num_jobs_fetch` | `300` | Max jobs to pull from Remotive per run |
+| `limits.top_k_retrieve` | `10` | FAISS nearest-neighbour results to retrieve |
+| `limits.top_n_score` | `5` | Number of jobs to score with the LLM |
+| `limits.llm_max_tokens` | `220` | Max tokens in each LLM scoring response |
+| `limits.embed_batch_size` | `64` | Jobs to embed per API/local batch |
+| `prompts.score_job.file` | `config/prompts/score_job_v2.txt` | Path to LLM prompt template |
+| `prompts.score_job.output_fields` | `{fit_score: FIT_SCORE, ...}` | Maps Python dict keys → LLM output keys |
+| `roles` | ML Engineer, LLM Engineer, ... | Role filter keywords shown in sidebar |
+| `noise_patterns` | `[...]` | Regex list to strip boilerplate from job descriptions |
+| `job_api.url` | `https://remotive.com/api/remote-jobs` | Job source API endpoint |
 
-## 🖥 How to Deploy Locally (Step-by-Step)
+### Switching the embedding model
 
-### 1\. Activate virtual environment
+The sidebar has a built-in **"Find Embedding Models"** button that queries the Together.ai API live and lets you switch models with one click. Or edit manually:
 
-`.\.venv\Scripts\Activate.ps1`
+```json
+{
+  "models": {
+    "embed_model": "local:sentence-transformers/all-MiniLM-L6-v2"
+  }
+}
+```
 
-### 2\. Run the Streamlit app
+After switching, rebuild the index:
 
-`streamlit run app.py`
+```powershell
+python -m src.embed_jobs
+python -m src.build_faiss_index
+```
 
-### 3\. Open in browser
+---
 
-`http://localhost:8501`
+## 💰 Cost Estimate
 
-* * *
+| Component | Cost | Notes |
+|-----------|------|-------|
+| Job embeddings | **Free** | sentence-transformers runs locally on CPU |
+| Resume embedding | **Free** | Same local model, single vector |
+| LLM scoring (5 jobs) | **~$0.006–0.012** | Llama-3.2-3B @ $0.06/M tokens × ~200 tokens × 5 jobs |
+| Job fetching | **Free** | Remotive public API, no key required |
+| **Total per run** | **~$0.01–0.02** | Mainly Together.ai LLM calls |
 
-## 📄 How to Use Your Own Resume
+---
 
-### Option A: Upload via Web App (recommended)
+## 🗑 Files to Remove
 
-Upload your resume PDF directly through the Streamlit interface.
+These debug and patch scripts were created during development. They are not needed in production.
 
-* * *
+| File | Why it exists | Safe to delete? |
+|------|--------------|-----------------|
+| `debug_live.py` | Traced the full match → score pipeline step by step | ✅ Yes |
+| `debug_match.py` | Tested `load_faiss_index` and `match_resume_to_jobs` | ✅ Yes |
+| `debug_score.py` | Showed raw LLM output for parser debugging | ✅ Yes |
+| `patch_app.py` | Fixed the field key mapping bug (now in `app.py`) | ✅ Yes |
+| `src/extract_resume.py` | Old standalone script — now inside `match_jobs.py` | ✅ Yes |
 
-### Option B: Replace resume file manually
+Delete all at once:
 
-Put your resume PDF into:
+```powershell
+Remove-Item debug_live.py, debug_match.py, debug_score.py, patch_app.py -ErrorAction SilentlyContinue
+```
 
-`data/resume/`
+---
 
-Example:
+## 🔮 Future Improvements
 
-`data/resume/My_Resume.pdf`
+- CSV / JSON export of results
+- Skill gap radar chart
+- Location and salary filters
+- Docker deployment
+- Streamlit Cloud deployment guide
+- Login system with history
+- Reranking with `Salesforce/Llama-Rank-V1`
 
-Then update this file:
+---
 
-`src/03_extract_resume.py`
+## 📄 License
 
-Change:
-
-`RESUME_PATH = Path("data/resume/your_resume.pdf")`
-
-* * *
-
-## 📊 Example Result Output
-
-`#1 score=0.69 Senior Data Engineer — Company A Location: USA URL: https://...  Summary: Strong match in Python, SQL, and data pipelines.  #2 score=0.66 AI Engineer — Company B Location: Worldwide URL: https://...  Summary: Matches ML and AI experience but missing cloud tools.`
-
-Displayed in the web app with:
-
--   Job title
-    
--   Company
-    
--   Location
-    
--   URL
-    
--   Score
-    
--   Explanation
-    
-
-* * *
-
-## 🌐 Deploy Online (Streamlit Cloud)
-
-1.  Push project to GitHub
-    
-2.  Go to: [https://share.streamlit.io](https://share.streamlit.io)
-    
-3.  Select repository and `app.py`
-    
-4.  Add secret:
-    
-
-`TOGETHER_API_KEY = your_api_key_here`
-
-5.  Deploy
-    
-
-* * *
-
-## 🔗 Connecting to Outlier.ai (Optional Integration)
-
-You can integrate this project with **Outlier.ai** for:
-
--   Data labeling
-    
--   Resume-job matching evaluation
-    
--   Model feedback and QA
-    
-
-### How to connect:
-
-1.  Export results as JSON or CSV from `07_score_explain.py`
-    
-2.  Upload results to Outlier.ai as a dataset
-    
-3.  Use Outlier tasks to:
-    
-    -   Validate match quality
-        
-    -   Improve scoring rules
-        
-    -   Collect human feedback
-        
-
-Suggested export file:
-
-`data/cache/scored_matches.json`
-
-Outlier.ai can be used to:
-
--   Label good vs bad matches
-    
--   Improve prompts
-    
--   Benchmark performance
-    
-
-* * *
-
-## ⚙️ Files to Modify for Customization
-
-| Purpose | File |
-| --- | --- |
-| Web UI | `app.py` |
-| Resume extraction | `src/extract_resume.py` |
-| Job cleaning | `src/clean_jobs.py` |
-| Embedding model | `src/embed_jobs.py` |
-| Matching logic | `src/match_jobs.py` |
-| Scoring & explanation | `src/score_explain.py` |
-
-* * *
-
-## 💰 Cost Control (Under $5 Budget)
-
--   Embeddings model: `m2-bert-80M-8k-retrieval`
-    
--   Chat model: `Llama-3.2-3B`
-    
--   Limit text length:
-    
-
-`resume_text = resume_text[:2000] job_text = job_text[:1500]`
-
--   Top 5 matches only
-    
-
-Estimated cost: **~$0.01 per run**
-
-* * *
-
-## 🛠 Future Improvements
-
--   Login system
-    
--   CSV export
-    
--   Skill gap visualization
-    
--   Filters by location or role
-    
--   UI charts
-    
--   Reranking with LLM
-    
--   Docker deployment
+MIT — free to use, modify, and distribute.
