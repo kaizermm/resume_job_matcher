@@ -290,7 +290,3 @@ Running scripts directly makes Python treat `src/` as the working directory, bre
 - [ ] Feedback loop — mark good/bad matches to improve future results
 
 ---
-
-## License
-
-MIT
